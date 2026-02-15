@@ -3,40 +3,105 @@ html, body {
     margin: 0;
     padding: 0;
     background: #fff;
+    overflow-y: auto;
 }
 .container {    
     flex: 1; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    justify-content: center;
-    height: 100vh; 
+    justify-content: center; 
     max-width: 900px; 
     margin: 0 auto;
+}
+.content-wrapper {
+  max-width:500px;
+}
+.content-wrapper p {
+  font-size:14px;
+}
+.container h1 {
+  text-align:center;
+  font-size:30px;
 }
 .nav {
     padding:10px;
     text-align: center;
-    font-size: 18px;
+    
 }
 hr {
     width:200px;
     color:black;
 }
 
-.static-nav {
-    position: sticky; /* Stays at the top of the screen */
-    top: 0;
-    background-color: white; /* Prevents text behind it from showing through */
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 1px solid #eee;
-    z-index: 1000; /* Keeps it above other content */
-    font-family: monospace;
+.title {
+  text-align:center;
+  font-size:20px;
 }
-
 #app {
     padding-top: 20px; /* Gives content some breathing room below the nav */
     max-width: 800px;
     margin: 0 auto;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.page-container {
+    width: 90%;
+    max-width: 800px;
+    /* Use min-height instead of fixed height */
+    min-height: 60vh; 
+    margin-top: 5vh;
+
+    padding: 40px;
+    background: #fdfdfd;
+    /* Remove overflow-y: auto! */
+}
+.static-nav {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+.static-nav a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+.static-nav a {
+    color: white; /* The "White Text" you wanted */
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Optional: extra legibility */
+}
+/* 3. The Footer at the very bottom */
+.footer {
+    margin-top: auto; /* Pushes footer to the bottom of the wrapper */
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.hero-nav {
+    width:600px;/* Adjust this height to show more/less of the image */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    overflow: hidden; /* Clips the image to the border radius */
+    background-color: #000000;
+    /* The Background Image Logic */
+    /* chickens background 
+     * background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                      url('/chickensbwweb.jpg'); */
+    background-size: cover;
+    background-position: center;
+    
+    /* Centering the nav links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
