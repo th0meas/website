@@ -31,6 +31,7 @@ html, body {
 }
 hr {
     width:200px;
+    margin-bottom: 20px;
     color:black;
 }
 
@@ -60,7 +61,7 @@ hr {
     margin-top: 5vh;
 
     padding: 40px;
-    background: #fdfdfd;
+    background: #ffff;
     /* Remove overflow-y: auto! */
 }
 .static-nav {

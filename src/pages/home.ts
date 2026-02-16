@@ -3,6 +3,7 @@ export const Home = () => {
     <div class="container">
         <div class="content-wrapper">
             <h1 >ANDREAS THOMAIDIS</h1>
+            <hr>
             <div style="display: flex; justify-content: center;">
                 <img src="/nagoyacastle.jpg" style="max-width: 300px; max-height: 500px;" alt="Nagoya Castle">
                           </div>

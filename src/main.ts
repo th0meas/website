@@ -1,13 +1,15 @@
 import './style.css'
 import { Home } from './pages/home'
 import { About } from './pages/about'
+import { Contact } from './pages/contact';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
 const routes: Record<string, () => string> = {
   '': Home,
   '#home': Home,
-  '#about': About
+  '#about': About,
+  '#contact': Contact
 };
 
 const handleRouting = () => {
